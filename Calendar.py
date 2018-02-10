@@ -77,9 +77,7 @@ def main(dataSum, dataDesc, dataLoc, dataStart, dataEnd, dataEndRec, dataID):
         }
             
     event = service.events().insert(calendarId=dataID, body=event).execute()
-##    print ('Event created: %s' % (event.get('htmlLink')))
                              
 if __name__ == '__main__':
-##    main()
-    print('DONT DO IT')
+    print("Start Improved Scraper.py instead")
 
