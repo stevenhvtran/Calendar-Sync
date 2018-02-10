@@ -58,10 +58,10 @@ def format_dates(date):
     return date
 
 def time_format(time):
-    return time.isoformat + ':00'
+    return str(time.isoformat())
 
 def recTime_format(time):
-    return time.strftime('%Y%m%d')
+    return str(time.strftime('%Y%m%d'))
 
 #Outputs n row data in a dictionary to be further processed
 def excel_row(row_number):
@@ -89,7 +89,10 @@ def main():
             #Changes formatting of times to what they need to be
             start_datetime = data['dates'][class_period][0] + data['time'] #Remember to use time_format later
             end_datetime = start_datetime + data['duration']
-            end_recurrence = data['dates'][class_period][1]
+            try:
+                end_recurrence = data['dates'][class_period][1]
+            except:
+                end_recurrence = data['dates'][class_period][0]
             #Initialises everything
             Calendar.main(data['subjectCode'],
                           data['description'],
