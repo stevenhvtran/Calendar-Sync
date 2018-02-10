@@ -19,10 +19,10 @@ def format_description(desc):
 
 def format_group(group):
     #Translates group to corresponding Google Calendar ID
-    group_url = {'Labo' : 'q8jbcibff4b91eu0ke3ub2fec0@group.calendar.google.com',
-                 'Lect' : 'djfhbm9eqh7e3fl8bjtu1a9kr8@group.calendar.google.com',
-                 'Supp' : 'g37i8n4henog0ta09etdp74lqc@group.calendar.google.com',
-                 'Tuto' : '38qkqd6jck7ib7gfhnoqjtsphg@group.calendar.google.com'
+    group_url = {'Labo' : 'gvquuiks4so096cqf03ff09oug@group.calendar.google.com',
+                 'Lect' : 'ljspq0s3acqdfd60moq3stl1po@group.calendar.google.com',
+                 'Supp' : 'dm26abfjlu02377it5b8i2h610@group.calendar.google.com',
+                 'Tuto' : 'ki66knb2lffb0nccap4ltedrls@group.calendar.google.com'
                  }
     return group_url[group[0:4]]
 
